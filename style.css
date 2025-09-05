@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #333;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px ;
+
+}
+
+.cabecalho a {
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
+border: white;
+border-color: white; 
+border-radius: 15px;
+}
+
+h2 {
+    display: block;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.conteudo img {
+    text-align: center;
+    height: 350px;
+    width: 350px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.no_teto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.no_teto img {
+
+    text-align: center;
+    height: 350px;
+    width: 350px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+
+
+.rodape {
+    text-align: center;
+    height: 40px;
+    background-color: #333;
+    color:white;
+}
+
+@media (max-width:768px) {
+    .cabecalho {
+        flex-direction: column;
+        height: 90px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: black;
+    }
+
+    .cabecalho a {
+        color: white;
+    }
+    h2 {
+        display: none;
+    }
+}
+
+@media (max-width: 460px){
+    .conteudo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cabecalho {
+        background-color: black;
+    }
+    .cabecalho a{
+        color: white;
+    }
+    .conteudo img {
+        margin:10px;
+        height: 200px;
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+}
+
+@media (max-width: 375px){
+    .no_teto{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cabecalho {
+        background-color: black;
+    }
+    .cabecalho a{
+        color: white;
+    }
+    .no_teto img {
+        margin:10px;
+        height: 200px;
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    
+    }
